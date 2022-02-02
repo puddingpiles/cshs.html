@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAPI Club</title>
+    <link href="main.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+        $(function() {
+            $(".toggle").on("click",function(){
+
+                if ($(".item").hasClass("active")){
+                    ($(".item").removeClass("active"));
+
+                }
+                else {
+                    ($(".item").addClass("active"));
+                }
+            })
+        });
+
+    </script>
+</head>
+
+<body>
+    
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="#"><img src="https://drive.google.com/uc?export=download&id=1lWHswWLwHuFkncwQIJB-4SQc_VHug_Fm" width="280" height="75"></a></li>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#mission">Mission</a></li>
+            <li class="item"><a href="#about">About</a></li>
+            <li class="item"><a href="#contact">Contact</a></li>
+            <li class="item button"><a href="https://classroom.google.com/c/MzY2MjEyNjY2MzU5?cjc=3fwvpay" class="button">Join!</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+            </ul>
+                
+        </nav>
+    </div>
+
+    <div class="carousel-container">
+
+        <div class="slide fade">
+          <img class ="carousel__img" src="https://drive.google.com/uc?export=download&id=1a7XIjU2F0NsymbMfvL3Q7LBWu5vTr8Uy">
+        </div>
+      
+        <div class="slide fade">
+          <img class ="carousel__img" src="https://drive.google.com/uc?export=download&id=10tRwp33SKGEaH4SXuNXITpneV43iQSfx">
+        </div>
+      
+        <div class="slide fade">
+          <img class ="carousel__img" src="https://drive.google.com/uc?export=download&id=1nBWBYHqZGy1DhVMzaArZOCTGqW8T8ON8">
+        </div>
+        
+        <div class="slide fade">
+          <img class ="carousel__img" src="https://drive.google.com/uc?export=download&id=1DX-Lin7TPBNXykT4G8OE_5JBrwqomBd4">
+        </div>
+        
+        <div class="slide fade">
+          <img class ="carousel__img" src="https://drive.google.com/uc?export=download&id=1sMHg-nIRnD-AFtH2XrPdMF0wnGUSaZ5V">
+        </div>
+        
+        <div class="slide fade">
+          <img class ="carousel__img" src="https://drive.google.com/uc?export=download&id=1-6Z7n0aFCg0WMvc3zeCk0T9RfSdDClXv">
+        </div>
+        
+        <div class="slide fade">
+          <img class ="carousel__img" src="https://drive.google.com/uc?export=download&id=1-aWckO0HfR9B9OuepUayvEZHb8ub1kQH">
+        </div>
+
+      </div>
+      <br>
+
+    <script>
+        var slideIndex = Math.floor(Math.random() * 3) + 1;
+        showSlides();
+        
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slide");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 2000);
+
+}
+    </script>
+    
+    <div id ="mission">
+        <h2 class = "section__header">Our Mission</h2>
+        <p class = "section__text">The mission of the Asian-American Pacific Islander Club is to spread schoolwide awareness of the diverse history and culture of Asian backgrounds through a variety of presentations and activities promoting these ideas. You don't have to be Asian to join!
+             
+        </p>
+        <a href="https://classroom.google.com/c/MzY2MjEyNjY2MzU5?cjc=3fwvpay" class="myButton">Join!</a>
+    </div>
+    
+
+    <div class = "column top" id = "about">
+        <h2 class = "section__header">About</h2>
+        <p class = "section__text">AAPI Club currently meets every other Monday. Please check the Google Classroom for announcements regarding the next meeting date. Each meeting covers a new aspect of Asian culture. Previous meetings themes have included: Squid Games, Bubble Tea, Sushi, Lunar New Year, and more!
+        </p>
+    </div>
+    <div class = "column bottom">
+<hr class = "contact"> 
+    
+    <div id ="contact">
+        <h2 class = "section__header">Questions? Contact Me!</h2>
+        <p><img class="mail" src="https://cdn4.iconfinder.com/data/icons/miu-black-social-2/60/mail-512.png">jonathan.lee@glenridge.org</p>
+    </div>
+
+    
+
+</body>
+</html>
